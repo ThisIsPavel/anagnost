@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Anagnost</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="reader">
+      <header class="reader__header">Anagnost (Screen reader)</header>
+      <div class="reader__body">
+        <div class="reader__settings">
+          <label class="reader__label"
+            >Язык озвучки
+            <select id="lang" class="reader__voices">
+              <option value="ru-RU">Русский</option>
+              <option value="en-GB">Английский</option>
+            </select>
+          </label>
+          <label class="reader__label"
+            >Громкость
+            <input
+              type="range"
+              id="volume"
+              min="0"
+              max="1"
+              step="0.1"
+              class="reader__volume"
+            />
+          </label>
+        </div>
+        <div class="reader__actions">
+          <button class="reader__button reader__playBtn">
+            Читать страницу
+          </button>
+          <button class="reader__button reader__stopBtn">Стоп</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
