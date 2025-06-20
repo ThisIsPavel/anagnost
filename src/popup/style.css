@@ -1,0 +1,96 @@
+:root {
+  --primary-color: #0071f0;
+  --white-text: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: max-content;
+  font-family: system-ui;
+  font-size: 22px;
+}
+
+.reader {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: rgba(128, 128, 128, 0.301);
+}
+
+.reader__header {
+  background: var(--primary-color);
+  color: var(--white-text);
+  padding: 20px;
+}
+
+.reader__body {
+  padding: 0 20px 20px;
+}
+
+.reader__settings {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.reader__label {
+  padding: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-bottom: 2px solid var(--white-text);
+}
+
+.reader__voices {
+  border: none;
+  flex: 1;
+  padding: 10px;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%230071f0'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px;
+  appearance: none;
+}
+
+.reader__voices:hover {
+  border-color: #0071f0;
+}
+
+.reader__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 15px;
+}
+
+.reader__button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: var(--white-text);
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.reader__playBtn:hover {
+  background: #015ac0;
+}
+
+.reader__playBtn {
+  background: #0071f0;
+}
+
+.reader__stopBtn {
+  display: none;
+  background-color: red;
+}
+
+.reader__stopBtn:hover {
+  background: #b30202;
+}
