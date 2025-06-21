@@ -15,6 +15,7 @@ body {
 }
 
 .reader {
+  width: 400px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -22,13 +23,27 @@ body {
 }
 
 .reader__header {
+  position: relative;
+  height: 50px;
   background: var(--primary-color);
   color: var(--white-text);
-  padding: 20px;
+  padding: 20px 20px 0;
+}
+
+.reader__title {
+  text-align: center;
+  font-size: 26px;
+}
+
+.reader__svg-image {
+  position: absolute;
+  width: 100%;
+  bottom: -40px;
+  right: 0;
 }
 
 .reader__body {
-  padding: 0 20px 20px;
+  padding: 20px;
 }
 
 .reader__settings {
