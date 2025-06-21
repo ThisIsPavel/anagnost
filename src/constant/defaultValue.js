@@ -7,3 +7,8 @@ export const DEFAULT_LANG = {
   value: "ru-RU",
   id: "lang",
 };
+
+export const DEFAULT_READING_MODE = {
+  value: false,
+  id: "checkbox",
+};
