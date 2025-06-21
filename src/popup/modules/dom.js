@@ -1,4 +1,8 @@
-import { DEFAULT_LANG, DEFAULT_VOLUME } from "@/constant/defaultValue.js";
+import {
+  DEFAULT_LANG,
+  DEFAULT_VOLUME,
+  DEFAULT_READING_MODE,
+} from "@/constant/defaultValue.js";
 import {
   getValueFromStorage,
   setValueInStorage,
@@ -10,6 +14,7 @@ export function getDOMElements() {
     stopButton: document.querySelector(".reader__stopBtn"),
     volume: document.querySelector(`#${DEFAULT_VOLUME.id}`),
     lang: document.querySelector(`#${DEFAULT_LANG.id}`),
+    readingModeToggle: document.querySelector(`.${DEFAULT_READING_MODE.id}`),
   };
 }
 
