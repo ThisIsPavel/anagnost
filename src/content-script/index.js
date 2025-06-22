@@ -11,7 +11,6 @@ import { speak } from "./speech-engine/tts";
 let isAltPressed = false;
 
 chrome.runtime.onMessage.addListener(async (request) => {
-  console.log("asd");
   if (request.action === "read") {
     processElement(document.body);
   } else if (request.action === "stop") {
