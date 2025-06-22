@@ -63,6 +63,7 @@ window.addEventListener("beforeunload", stopReading);
 
 function stopReading() {
   window.speechSynthesis.cancel();
+  chrome.storage.local.clear();
   window.removeEventListener("beforeunload", stopReading);
 }
 
