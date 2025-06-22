@@ -59,8 +59,16 @@ function handleMouseOut(e) {
   element.style.outline = "";
 }
 
+window.addEventListener("beforeunload", stopReading);
+
+function stopReading() {
+  window.speechSynthesis.cancel();
+  window.removeEventListener("beforeunload", stopReading);
+}
+
 export function processElement(element) {
   if (shouldSkip(element)) return;
+
   const tagName = element.tagName.toLowerCase();
   const handler = SPEECH_RULES.TAGS[tagName];
 
